@@ -1,15 +1,27 @@
-####  Business Context
-The application periodically emails users with discount offers. The goal is to offer the smallest possible discount that still yields a high probability of purchase.
+## Business Context
 
-####  Solution Overview
-The repository contains a two-stage pipeline that tailors email discounts on a per-user basis:
+The application periodically emails users with discount offers.  
+The goal is to offer the **smallest possible discount** that still yields a **high probability of purchase**.
 
-Purchase Probability Model (XGBoost) Predicts the likelihood that a user will buy given a specific discount.
-Discount Grid Search
-Sweeps through candidate discounts and selects the minimum one that reaches the desired purchase-probability threshold.
-The results is a focused mailing list containing only those users who are both likely to convert and the discount percentage required to nudge them over the line.
+---
 
-Repository Structure
+## Solution Overview
+
+This repository contains a **two-stage pipeline** that tailors email discounts on a per-user basis:
+
+1. **Purchase Probability Model (XGBoost)**  
+   Predicts the likelihood that a user will buy given a specific discount.
+
+2. **Discount Grid Search**  
+   Sweeps through candidate discounts and selects the **minimum one** that reaches the desired purchase-probability threshold.
+
+The result is a **focused mailing list** containing only those users who are both likely to convert and the discount percentage required to nudge them over the line.
+
+---
+
+## Repository Structure
+
+```text
 Discount_Optimization/
 ├── Raw_data/              # Original data provided for the project
 ├── Analisis/              # Notebooks for data cleaning and baseline dataset creation
@@ -18,3 +30,4 @@ Discount_Optimization/
 ├── Inference/             # Production-ready inference scripts (.py files)
 │   └── Prod_model/        # Packaged model code for deployment
 └── README.md              # Project overview
+

@@ -21,7 +21,6 @@ Discount_Optimization/
 ├── Analisis/              # Notebooks for data cleaning and baseline dataset creation
 ├── Train_model/           # Training logic for purchase model and discount optimizer
 ├── Project_datasets/      # Intermediate and final CSV files used throughout the project
-├── Inference/             # Production-ready inference scripts (.py files)
-│   └── Prod_model/        # Packaged model code for deployment
+├── Inference(Prod_model)  # Production-ready inference scripts (.py files)
 └── README.md              # Project overview
 

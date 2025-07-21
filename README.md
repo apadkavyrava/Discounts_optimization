@@ -18,7 +18,7 @@ The result is a **focused mailing list** containing only those users who are bot
 ```text
 Discount_Optimization/
 ├── Raw_data/              # Original data provided for the project
-├── Analisis/              # Notebooks for data cleaning and baseline dataset creation
+├── Analysis/              # Notebooks for data cleaning and baseline dataset creation
 ├── Train_model/           # Training logic for purchase model and discount optimizer
 ├── Project_datasets/      # Intermediate and final CSV files used throughout the project
 ├── Inference(Prod_model)  # Production-ready inference scripts (.py files)

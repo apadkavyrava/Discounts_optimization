@@ -1,25 +1,19 @@
-## Business Context
+### Business Context
 
 The application periodically emails users with discount offers.  
 The goal is to offer the **smallest possible discount** that still yields a **high probability of purchase**.
 
----
-
-## Solution Overview
+### Solution Overview
 
 This repository contains a **two-stage pipeline** that tailors email discounts on a per-user basis:
-
 1. **Purchase Probability Model (XGBoost)**  
    Predicts the likelihood that a user will buy given a specific discount.
-
 2. **Discount Grid Search**  
    Sweeps through candidate discounts and selects the **minimum one** that reaches the desired purchase-probability threshold.
 
 The result is a **focused mailing list** containing only those users who are both likely to convert and the discount percentage required to nudge them over the line.
 
----
-
-## Repository Structure
+### Repository Structure
 
 ```text
 Discount_Optimization/
